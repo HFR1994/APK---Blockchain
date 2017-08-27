@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -51,7 +54,7 @@ public class SplashActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 try {
-                    state(getIntent().getStringExtra("Hospital"), getIntent().getStringExtra("Secret"),getIntent().getStringExtra("ID"),dia,true);
+                    state(getIntent().getStringExtra("Hospital"),getIntent().getStringExtra("Secret"),getIntent().getStringExtra("ID"),dia,true);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

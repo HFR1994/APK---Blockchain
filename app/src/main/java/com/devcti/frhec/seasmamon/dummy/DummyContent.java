@@ -55,8 +55,10 @@ public class DummyContent extends AppCompatActivity{
         int i=1;
 
         for (Map.Entry<String, String> key : mapa.entrySet()) {
-            JsonNode actualObj = mapper.readTree(key.getValue());
-            addItem(createDummyItem(actualObj.get("name").toString(),actualObj.get("secret").toString(),i++,new Date(Long.parseLong(actualObj.get("dia").toString())),actualObj.get("type").toString()));
+            if(key.getKey().toString() != "Key-Secret"){
+                JsonNode actualObj = mapper.readTree(key.getValue());
+                addItem(createDummyItem(actualObj.get("name").toString(),actualObj.get("secret").toString(),i++,new Date(Long.parseLong(actualObj.get("dia").toString())),actualObj.get("type").toString()));
+            }
         }
 
     }
@@ -76,7 +78,7 @@ public class DummyContent extends AppCompatActivity{
         builder.append("Secret: "+secret.replace("\"","")+"\n\n");
         SimpleDateFormat dt1 = new SimpleDateFormat("dd/mm/yyyy");
         builder.append("Dia: "+dt1.format(dia)+"\n\n");
-        builder.append("Permiso: "+ per);
+        //builder.append("Permiso: "+ per);
         return builder.toString();
     }
 
