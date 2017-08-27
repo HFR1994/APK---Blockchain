@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "726618650393",
+    "firebase_url": "https://seasmamon-7dc63.firebaseio.com",
+    "project_id": "seasmamon-7dc63",
+    "storage_bucket": "seasmamon-7dc63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726618650393:android:c6b02b2ba6485a10",
+        "android_client_info": {
+          "package_name": "com.devcti.frhec.seasmamon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726618650393-cp82pql9cbbu191urf7glq4950qpukrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devcti.frhec.seasmamon",
+            "certificate_hash": "c0141daaf14902e70b7b00028105a8ea80111a97"
+          }
+        },
+        {
+          "client_id": "726618650393-ijomqi4164sp71p1fno29lbirb5qlblf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Iv-ci_Rg-BqfY-EO51MgOiFExTnOAxg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726618650393-ijomqi4164sp71p1fno29lbirb5qlblf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
